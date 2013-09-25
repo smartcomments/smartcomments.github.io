@@ -15,7 +15,6 @@ require(['assets/js/app/lib/smartcomments.js'], function(smartcomments) {
                 },
                 template: '../templates/default.js'
             }
-
         smartcomments.initialize(default_config);
         $(".demo textarea").val(smartcomments.generate(code));
     });
