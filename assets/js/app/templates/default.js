@@ -1,6 +1,4 @@
 define(function(require, exports, module) {
-
-
     var DefaultTemplate = {
 
         initialize: function(config) {
@@ -193,4 +191,3 @@ define(function(require, exports, module) {
     exports.setCommentsList = DefaultTemplate.setCommentsList;
     return exports;
 });
-
