@@ -8,6 +8,12 @@ ul.navbar-nav, .navbar-green {
 }
 .navbar-green {
 height: 93px;
+font-family:myFirstFont;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+  color: white !important;
+  font-size: 1em !important;
 }
 
 .box-npm {
