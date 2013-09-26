@@ -126,7 +126,10 @@
       <div class="row">
         <div class="col-sm-12 col-md-12">
           <div class="demo">
-            <textarea placeholder="Paste, Upload or Write your code here for testing..." rows="15" class="form-control demo-textarea"></textarea>
+    
+            <textarea placeholder="Paste, Upload or Write your code here for testing..." rows="15" class="form-control demo-textarea" value="45">
+              
+            </textarea>
           </div>
         </div>
       <div class="row">
@@ -251,7 +254,13 @@
     <script type="text/javascript" src="assets/js/index.js"
     ></script>
     <script type="text/javascript" src="assets/js/require.js" data-main="assets/js/app/app.js"></script>
-    
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script>$(document).ready(function() {
+  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+});
+// hljs.initHighlightingOnLoad();</script>
+
     
 
   </body>
