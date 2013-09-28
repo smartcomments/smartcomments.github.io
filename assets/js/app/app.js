@@ -1,7 +1,7 @@
 require(['assets/js/app/lib/smartcomments.js'], function(smartcomments) {
 
     $(".generate").click(function() {
-        var code = $(".demo textarea").val(),
+        var code = myCodeMirror.getValue(),
             default_config = {
                 tags: {
                     function: {
@@ -16,6 +16,6 @@ require(['assets/js/app/lib/smartcomments.js'], function(smartcomments) {
                 template: '../templates/default.js'
             }
         smartcomments.initialize(default_config);
-        $(".demo textarea").val(smartcomments.generate(code));
+        myCodeMirror.setValue(smartcomments.generate(code));
     });
 });
