@@ -35,8 +35,7 @@ src: url('../fonts/HelveticaNeueLTStd-Th.otf');
 .navbar-font {
   font-family:myFirstFont;
   color: #D9D9D9;
-  font-style: italic;
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .demo {
@@ -48,11 +47,6 @@ src: url('../fonts/HelveticaNeueLTStd-Th.otf');
 
 .container .row {
     margin-left: 0;
-}
-
-.demo-textarea {
-  /*background-image: url('../img/explain.png'); */
-
 }
 
 .demo-textarea:focus {
