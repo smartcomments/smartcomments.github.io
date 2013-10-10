@@ -55,6 +55,15 @@
                         </a>
                       </li>
                       <li id="2" class="jquery">
+                        <a class="features" href="#features">
+                          <center>
+                            <img src="assets/img/features.png" class="hidden-xs img-responsive img-padding">
+                            Features
+                          </center>
+                        </a>
+
+                      </li>
+                      <li id="3" class="jquery">
                         <a class="installation" href="#installation">
                           <center>
                             <img src="assets/img/Installation.png" class="hidden-xs img-responsive img-padding">
@@ -62,20 +71,11 @@
                           </center>
                         </a>
                       </li>
-                      <li id="3" class="jquery">
+                      <li id="4" class="jquery">
                         <a class="usage" href="#usage">
                           <center>
                             <img src="assets/img/usage.png" class="hidden-xs img-responsive img-padding">
                             Usage
-                          </center>
-                          
-                        </a>
-                      </li>
-                      <li id="4" class="jquery">
-                        <a class="features" href="#features">
-                          <center>
-                            <img src="assets/img/features.png" class="hidden-xs img-responsive img-padding">
-                            Features
                           </center>
                           
                         </a>
@@ -109,9 +109,9 @@
               <div class="col-sm-6 col-md-6">
                 <center>
                   <div class="bs-callout bs-callout-info">
-                    <p>SmartComments, nodejs aplication that allow to create comments automatics to your code javascript. This application integrates easily with yuidocs.</p>
+                    <p>SmartComments, It's a tool that allow you to create implicit comments from javascript source code. You can integrate it with javascript documentation generators like <a href="http://yuilibrary.com/yui/docs">YUIDocs</a>.</p>
                     <code>
-                      <span>Latest Version Stable: v0.4.1</span>
+                      <span>Latest Stable Version: v0.1.0</span>
                     </code>
                   </div>
                 </center>
@@ -128,82 +128,14 @@
       <div class="row">
         <div class="col-sm-12 col-md-12">
           <div class="demo">
-    
-            <!--<textarea placeholder="Paste, Upload or Write your code here for testing..." rows="15" class="form-control demo-textarea" value="45">
-           </textarea> -->
           </div>
         </div>
       <div class="row">
           <div class="col-sm-3 col-md-3 pull-right">
-              <!-- <button type="button" class="btn btn-info upload">Upload <img style="max-width:100%; height:auto" src="assets/img/upload.png"></button> -->
               <button type="button" class="btn btn-info generate">Generate comment <img style="max-width:100%; height:auto" src="assets/img/generate.png"></button>
           </div>
       </div> 
       </div>
-
-      <section id="installation">
-      <br>
-
-      
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
-            <img src="assets/img/Installation-img.png">
-          </div>
-          <br>
-          <div class="col-sm-12 col-md-12">
-            <p class="row-background">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-            <pre class="pre-consola">
-              <p>npm install -g smartcomments<br>smartcomments generate</p>
-            </pre>
-            <p class="row-background">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            </p>
-            <pre>
-              <code>
-                    less = {
-                        env: "development", // or "production"
-                        async: false,       // load imports async
-                        fileAsync: false,   // load imports async when in a page under
-                                            // a file protocol
-                        poll: 1000,         // when in watch mode, time in ms between polls
-                        functions: {},      // user functions, keyed by name
-                        dumpLineNumbers: "comments", // or "mediaQuery" or "all"
-                       
-                    };
-              </code>
-            </pre>
-          </div>
-        </div>
-      </section>
-
-      <section id="usage">
-      <br>
-
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
-            <img src="assets/img/usage-img.png">
-          </div>
-          <br>
-          <div class="col-sm-12 col-md-12">
-            <p class="row-background">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              <br><br>
-            </p>
-            <pre>
-              <code>
-                    
-              </code>
-            </pre>
-            <p class="row-background">
-              <br><br>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>  
-          </div>
-        </div>
-      </section>
-
       <section id="features">
       <br>
       
@@ -221,6 +153,91 @@
           </div>
         </div>
       </section>
+      <section id="installation">
+      <br>
+
+      
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <img src="assets/img/Installation-img.png">
+          </div>
+          <br>
+          <div class="col-sm-12 col-md-12">
+            <p class="row-background">
+                Make sure you have installed <a href="http://nodejs.org">Node.js</a> and then run the follow command in the console.
+            </p>
+            <pre class="pre-consola">
+              <p>npm install -g smartcomments</p>
+            </pre>
+            <p class="row-background">
+                After the installation process have finished you can put the command <b>smartcomments</b> on the console. You will see something like this.
+            </p>
+            <pre class="pre-consola">
+              <p>dariel@ltsnotebook:~$ smartcomments<br><br>Hello!!!<br>using smartcomments@0.1.0 on node@0.10.15<br>    -h, --help  Show this sttuf<br>-g, --generate  Generate comments from your source<br>  -t, --target  Specifies the target from which to generate </p>
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="usage">
+      <br>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <img src="assets/img/usage-img.png">
+          </div>
+          <br>
+          <div class="col-sm-12 col-md-12">
+            <p class="row-background">
+              Move to the folder where the .js files are located for which you want to generate the comments. And put command <b>--generate</b> on the console.
+            </p>
+            <pre class="pre-consola">
+              <p>dariel@ltsnotebook:~$ cd some_dir <br>dariel@ltsnotebook:~/some_dir$ smartcomments --generate</p>
+            </pre>
+            <p class="row-background">
+                Under the hood SmartComments:<br><br>
+                  1 - Search in the current directory if you have any custom configuration file. See <a href="#custom_config">custom configuration</a> for more details.<br><br> 
+
+                  2 - Search recursively through the specified folder, all files that match with <b>match_files</b> option, by default search for .js files only. See <a href="#config_options">configuration options</a> for more details.<br><br>
+
+                  3 - For each file found SmartComments generates the comments associated with the tags specified in the options. See <a href="#supported_tags">supported tags</a> for more details.<br><br>
+
+                  4 – And finally SmartComments creates a backup of the files, in case you want to return to the previous state. The backup files look like this <b>~my_file.js</b>. You can disable this feature in the configuration file.
+             </p> 
+          </div>
+          <div class="col-sm-12 col-md-12">
+            <p class="row-background">
+              If you want to especify the directory or file which you want to generate the comments, then using <b>--target</b> option.
+            </p>
+            <pre class="pre-consola">
+              <p>dariel@ltsnotebook:~$ smartcomments -g --target /some_dir_or_file<br></p>
+            </pre>
+          </div>
+        </div>
+        <section id="custom_config">
+          <div class="col-sm-12 col-md-12">
+            <h4>Custom configuration</h4>
+            <p class="row-background">
+              If you want to specify your own configuration, create a file with the <b>smartcomments.json</b> name, in the directory where you want to generate the comments. If the configuration file name it’s different than smartcomments.json, SmartComments won’t load your configuration. 
+              You can see a configuration <a href="https://github.com/smartcomments/smartcomments/blob/master/config/config.json">file example here</a>.
+            </p>  
+          </div>
+        </section>
+        <section id="config_options">
+          <div class="col-sm-12 col-md-12">
+            <h4>Configuration options</h4>
+              <p class="row-background">
+                <b>target:</b> If it is a directory this option specify that the files within this directory are the ones that SmartComment will generate comments for. If it’s a file SmartComment will generate the comments for this file.<br><br>
+
+                <b>match_files:</b> Regular expression that defines rules for the file names, for example ["^((?!~).)*.(js)$"] match if the file names ends with .js and do not contain ~.<br><br>
+
+                <b>backup:</b> Accepts true or false. If true a backup of the files is created before the file is modified.<br><br>
+
+                <b>Template:</b> Path of the template that you want to use for the comments generation. In a template, a series of algorithm that allow to generate the comments from an AST with the JavaScript code are defined.<br><br>
+              </p>
+          </div>
+        </section>
+      </section>
 
       <section id="about">
       <br>
@@ -232,12 +249,31 @@
           <br>
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
-              SmartComments was developed by <a href="mailto:darielnoel@gmail.com" title="darielnoel@gmail.com">Dariel Noel Vila Plagado</a>, <a href="mailto:madrazoreyescarloslazaro@gmail.com" title="madrazoreyescarloslazaro@gmail.com">Carlos Madrazo Reyes</a> and <a href="mailto:pjimenez@estudiantes.uci.cu" title="pjimenez@estudiantes.uci.cu">Pedro Hernández Jiménez</a>. It is now mantained and extended by the SmartComments core team.
+              SmartComments is developed by a community, in which you can work freely.<br><br>
+              
+
+              Node.js Developer: <a href="mailto:darielnoel@gmail.com" title="darielnoel@gmail.com">  Dariel N. Vila Plagado</a>,  
+
+              Front End Site Developer: <a href="mailto:madrazoreyescarloslazaro@gmail.com" title="madrazoreyescarloslazaro@gmail.com">Carlos Madrazo Reyes</a>,
+
+              Sublime Text Plugin: <a href="mailto:gallego@gmail.com" title="gallego@gmail.com">Yolier Galán Tassé </a>,
+
+              Front End Site Design: <a href="mailto:pjimenez@estudiantes.uci.cu" title="pjimenez@estudiantes.uci.cu">Pedro Hernández Jiménez</a>.
             </p>
           </div>
         </div>
-      </section>
 
+      </section>
+        <section>
+          <div class="col-sm-12 col-md-12">
+            <h4>Aknowledgement</h4>
+              <p class="row-background">
+                To Mr. Ariya Hidayat <a href="http://esprima.org/">Esprima</a>’ creator,
+                Mr. David Quintana <a href="https://github.com/gigaherz/eswalker">eswalker</a>’ creator, Mr. Caridy Patino, Principal Engineer at Yahoo!, and to all the persons that helped with this project.ss
+
+              </p>
+          </div>
+        </section>
       <br>
 
       <footer role="contentinfo">
