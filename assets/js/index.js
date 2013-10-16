@@ -23,6 +23,9 @@ function inicializarEventos() {
   		value: demo_value,
   		mode:  "javascript"
 	});
+	$(".logo-github-small").mouseover(function() {
+		$('.show-tooltip').tooltip('title')
+	});
 }
 function navbar(){
 	$(".jquery").click(function() {
