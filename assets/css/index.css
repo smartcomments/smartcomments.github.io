@@ -154,6 +154,7 @@ pre p {
 }
 
 /* --- LOGO GITHUB ----*/
+
 .logo-github-small {
   background-color: #008550;
   width: 52px;
@@ -163,7 +164,7 @@ pre p {
   top: -10px;
   overflow: hidden;
   -webkit-border-radius: 26px;
-  -moz-border-radius: 26px;
+  moz-border-radius: 26px;
   -ms-border-radius: 26px;
   -o-border-radius: 26px;
   border-radius: 26px;
@@ -361,4 +362,5 @@ pre p {
   left: 7.106666666666667px;
   top: 36.74666666666667px;
 }
+
 /* END--- LOGO GITHUB ----*/
