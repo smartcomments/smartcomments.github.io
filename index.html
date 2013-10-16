@@ -21,6 +21,9 @@
             background-image:none; 
 
           }
+          .logo-github-small {
+            margin: 0 auto;
+          }
         }
     </style>
   </head>
@@ -117,7 +120,7 @@
                 </center>
               </div>
               <div class="col-sm-5 col-md-4 col-md-offset-1">
-                  <pre class="pre-consola">
+                  <pre class="pre-consola consola">
                     <p>npm install -g smartcomments<br>smartcomments generate</p>
                   </pre>
               </div>
@@ -131,7 +134,16 @@
           </div>
         </div>
       <div class="row">
-          <div class="col-sm-3 col-md-3 pull-right">
+          <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 pull-left checkbox-group">
+            <form class="form-inline" role="form">
+              <input class="checkbox1" type="checkbox"> function&nbsp
+              <input class="checkbox2" type="checkbox" disabled="disabled"> @param&nbsp
+              <input class="checkbox3" type="checkbox" disabled="disabled"> @method&nbsp
+              <input class="checkbox4" type="checkbox" disabled="disabled"> @return&nbsp
+            </form>
+          </div>
+          <div class="col-sm-5 col-md-4 pull-right">
+              <button type="button" class="btn btn-info preview">Preview</button>
               <button type="button" class="btn btn-info generate">Generate comment <img style="max-width:100%; height:auto" src="assets/img/generate.png"></button>
           </div>
       </div> 
@@ -246,18 +258,16 @@
           </div>
           <br>
           <div class="col-sm-12 col-md-12">
-            <p class="row-background">
-              SmartComments is developed by a community, in which you can work freely.<br><br>
-              
+            <div class="row-background">
+              SmartComments is developed by a community, in which you can work freely. <br><br>
 
-              Node.js Developer: <a href="mailto:darielnoel@gmail.com" title="darielnoel@gmail.com">  Dariel N. Vila Plagado</a>,  
-
-              Front End Site Developer: <a href="mailto:madrazoreyescarloslazaro@gmail.com" title="madrazoreyescarloslazaro@gmail.com">Carlos Madrazo Reyes</a>,
-
-              Sublime Text Plugin: <a href="mailto:gallego@gmail.com" title="gallego@gmail.com">Yolier Galán Tassé </a>,
-
-              Front End Site Design: <a href="mailto:pjimenez@estudiantes.uci.cu" title="pjimenez@estudiantes.uci.cu">Pedro Hernández Jiménez</a>.
-            </p>
+              <p>
+                Node.js Developer: <a href="mailto:darielnoel@gmail.com" title="darielnoel@gmail.com">Dariel N. Vila Plagado</a>, @dariel_noel <br>
+                Front End Site Developer: <a href="mailto:madrazoreyescarloslazaro@gmail.com" title="madrazoreyescarloslazaro@gmail.com">Carlos L. Madrazo</a>, @madrazo_ <br>
+                Sublime Text Plugin: <a href="mailto:gallego@gmail.com" title="gallego@gmail.com">Yolier Galán Tassé</a>, @gallegogt <br>
+                Front End Site Design : <a href="mailto:pjimenez@estudiantes.uci.cu" title="pjimenez@estudiantes.uci.cu">Pedro A. Hernández </a> <br>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -275,8 +285,31 @@
       <br>
 
       <footer role="contentinfo">
-        
-          <a href=""><p class="text-muted credit">Fork me on Github</p></a>
+              <a class="show-tooltip" href="https://github.com/smartcomments/smartcomments" data-placement="right" data-toggle="tooltip" data-original-title="Fork me on Github">
+                <div class="col-md-6 col-sm-offset-6 col-md-offset-6 logo-github-small">
+                  <div class="ear-one-left"></div>
+                  <div class="ear-one-none"></div>
+                  <div class="ear-one-right"></div>
+                  <div class="ear-two-right"></div>
+                  <div class="ear-two-none"></div>
+                  <div class="ear-two-left"></div>
+                  <div class="body-bottom"></div>
+                  <div class="body-left-none"></div>
+                  <div class="body-right-none"></div>
+                  <div class="tail-end"></div>
+                  <div class="tail-body"></div>
+                  <div class="tail-body-spots"></div>
+                  <div class="tail-end-none"></div>
+                  <div class="tail-body-none"></div>
+                  <div class="tail-tip"></div>
+                  <div class="body-left"></div>
+                  <div class="body-right"></div>
+                  <div class="head"></div>
+                  <div class="chin-left"></div>
+                  <div class="chin-right"></div>
+                </div>
+              </a>
+          
         
       </footer>
 
