@@ -260,14 +260,46 @@
                   &emsp;Defines a parameter for an ordinary @method.<br> 
                   &emsp;<strong>@return</strong><br>
                   &emsp;Specifies a method's return value.<br><br>
-                  Using custom templates you may add your own tags. See <a href="#custom-templates">Custom Templates</a> feature for more information. 
+                  Using custom tags you may add your own tags. See <a href="#custom-tags">Custom Tags</a> feature for more information. 
 
             </p>  
           </div>
           <div class="col-sm-12 col-md-12">
-            <h4 id="custom-templates">Custom Templates</h4>
+            <h4 id="custom-tags">Custom Tags</h4>
             <p class="row-background">
-                Custom Templates it's an interesting SmartComents feature,  It's a shame we do not have the documentation available now. But We are working on it.
+                <strong>Why Custom tags?</strong></br></br>
+                To generate implicit comments you need to have a strong knowledge about the language, framework, or company´s coding style. This is a very important thing when we work with a dynamical languages as JavaScript.</br></br>
+
+                The way to declare classes, fire events, or call functions are some examples of elements that change in every implementation. Below you can see, the diferents ways to fire events in 4 JavaScript frameworks.</br></br>
+
+               &emsp;<strong>YUI</strong> </br>
+               &emsp;.fire(type, arguments) </br></br>
+
+               &emsp;<strong>jQuery</strong> </br>
+               &emsp;.trigger( eventType, extraParameters )</br></br>
+              
+               &emsp;<strong>Ext JS 4</strong> </br>
+               &emsp;.fireEvent( eventName, args )</br></br>
+              
+               &emsp;<strong>Angular Js</strong> </br>
+               &emsp;$emit(name, args)</br></br>
+              To solve this problem SmartComments allow you to change or add your own custom tags.</br></br>
+              <strong>How to customize or add tags?</strong></br></br>
+              Firstly you might understand how SmartComments work internally.</br></br>
+              &emsp;1. An AST tree compatible with Mozilla Parser AST is generated from source code using<a href="http://esprima.org/"> Esprima</a>.</br></br>
+
+              &emsp;2. The AST tree is walked and visitor functions are called from each node.</br></br> 
+
+              &emsp;3. A concrete visitor function implementation is called from every tags.</br></br>
+
+              &emsp;4. The new comments is adding to comment list.</br></br>
+
+              &emsp;5. The comment list is traversed, and every comment is inserted into the source code at a specified position.</br></br>
+              It's a shame we do not have a complete documentation available now. But We are working on it.
+
+              You can take a look at <a href="https://github.com/smartcomments/smartcomments/blob/master/templates/default.js">Our Custom Tags template</a>.
+
+
             </p>  
           </div>
         </div>
