@@ -140,6 +140,19 @@ define(function(require, exports, module) {
                         comment_data.node = params.node;
                         instance.buildComment(comment_data);
                     }
+                    else if(parent.type === 'AssignmentExpression') {
+                        
+                        if(parent.right.type === 'FunctionExpression') {
+                            
+                            if (parent.left.property && parent.left.property.name) {
+                                comment_data.name = parent.left.property.name;
+                            }
+                            
+                            comment_data.pos  = parent.left.range[0];
+                            comment_data.node = parent.right;
+                            instance.buildComment(comment_data);
+                        }
+                    }
                 },
 
                 enterFunctionDeclaration: function(params) {

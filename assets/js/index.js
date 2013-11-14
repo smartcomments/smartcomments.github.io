@@ -17,7 +17,11 @@ function inicializarEventos() {
 					  '	anotherUncommentFunction: function(x, y){\n'+
 					  	'		return x;\n'+
 					  '	}\n'+
+					'}\n\n'+
+					'someFunction.prototype.test = function(a){\n'+
+					    '   return a;\n'+
 					'}';
+
 
 	myCodeMirror = CodeMirror($('div.demo')[0], {
   		value: demo_value,
