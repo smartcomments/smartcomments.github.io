@@ -18,8 +18,8 @@ function inicializarEventos() {
 					  	'		return x;\n'+
 					  '	}\n'+
 					'}\n\n'+
-					'someFunction.prototype.test = function(a){\n'+
-					    '   return a;\n'+
+					'someFunction.prototype.test = function(){\n'+
+					    '   return "Thanks karelm";\n'+
 					'}';
 
 
