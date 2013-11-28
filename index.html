@@ -114,7 +114,7 @@
                   <div class="bs-callout bs-callout-info">
                     <p>SmartComments, It's a tool that allow you to create implicit comments from javascript source code. You can integrate it with javascript documentation generators like <a href="http://yuilibrary.com/yui/docs">YUIDocs</a>.</p>
                     <code>
-                      <span>Latest Stable Version: v0.1.1</span>
+                      <span>Latest Stable Version: v0.2.0</span>
                     </code>
                   </div>
                 </center>
@@ -135,12 +135,6 @@
         </div>
       <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 pull-left checkbox-group">
-            <!-- <form class="form-inline" role="form">
-              <input class="checkbox1" type="checkbox"> function&nbsp
-              <input class="checkbox2" type="checkbox" disabled="disabled"> @param&nbsp
-              <input class="checkbox3" type="checkbox" disabled="disabled"> @method&nbsp
-              <input class="checkbox4" type="checkbox" disabled="disabled"> @return&nbsp
-            </form> -->
           </div>
           <div class="col-sm-5 col-md-4 pull-right">
               <button type="button" class="btn btn-info preview">Preview</button>
@@ -168,7 +162,8 @@
                 After the installation process have finished you can put the command <b>smartcomments</b> on the console. You will see something like this.
             </p>
             <pre class="pre-consola">
-              <p>dariel@ltsnotebook:~$ smartcomments<br><br>Hello!!!<br>using smartcomments@0.1.0 on node@0.10.15<br>    -h, --help  Show this sttuf<br>-g, --generate  Generate comments from your source<br>  -t, --target  Specifies the target from which to generate </p>
+              <p>dariel@ltsnotebook:~$ smartcomments -h<br><br>Hello!!!<br>using smartcomments@0.2.0 on node@0.10.21<br>Command line options:<br><br>-h, --help                        Show this sttuf<br>-g, --generate  [options]         Generate comments from your source<br>                [-t, --target]    Specifies the target from which to generate<br>                [-c, --config]    Custom configuration file path<br> 
+              </p>
             </pre>
           </div>
         </div>
@@ -197,7 +192,7 @@
 
                   3 - For each file found SmartComments generates the comments associated with the tags specified in the options. See <a href="#supported_tags">supported tags</a> for more details.<br><br>
 
-                  4 – And finally SmartComments creates a backup of the files, in case you want to return to the previous state. The backup files look like this <b>~my_file.js</b>. You can disable this feature in the configuration file.
+                  4 – And finally if you have the backup option enable in the configuration file, SmartComments creates a backup of the files, in case you want to return to the previous state. The backup files look like this <b>~my_file.js</b>.
              </p> 
           </div>
           <div class="col-sm-12 col-md-12">
@@ -208,13 +203,22 @@
               <p>dariel@ltsnotebook:~$ smartcomments -g --target /some_dir_or_file<br></p>
             </pre>
           </div>
+          <div class="col-sm-12 col-md-12">
+            <p class="row-background">
+              If you want to especify the path of your custom configuration file, then using <b>--config</b> option.
+            </p>
+            <pre class="pre-consola">
+              <p>dariel@ltsnotebook:~$ smartcomments -g --config /some_dir/smartcomments.json<br></p>
+            </pre>
+          </div>
+
         </div>
         <section id="custom_config">
           <div class="col-sm-12 col-md-12">
             <h4>Custom configuration</h4>
             <p class="row-background">
               If you want to specify your own configuration, create a file with the <b>smartcomments.json</b> name, in the directory where you want to generate the comments. If the configuration file name it’s different than smartcomments.json, SmartComments won’t load your configuration. 
-              You can see a configuration <a href="https://github.com/smartcomments/smartcomments/blob/master/config/config.json">file example here</a>.
+              You can see a configuration <a href="https://github.com/smartcomments/smartcomments/blob/master/config/smartcomments.json">file example here</a>.
             </p>  
           </div>
         </section>
@@ -370,7 +374,10 @@
 
               Sublime Text Plugin: <a href="mailto:gallego@gmail.com" title="gallego@gmail.com">Yolier Galán Tassé </a>,
 
-              Front End Site Design: <a href="mailto:pjimenez@estudiantes.uci.cu" title="pjimenez@estudiantes.uci.cu">Pedro Hernández Jiménez</a>.
+              Front End Site Design: <a href="mailto:pjimenez@estudiantes.uci.cu" title="pjimenez@estudiantes.uci.cu">Pedro Hernández Jiménez</a>,
+              <a href="http://www.lsauer.com/">Lorenz Lo Sauer</a>,
+              <a href="https://github.com/karelm">Karel Mcgrail</a>.
+              
             </p>
           </div>
         </div>
@@ -380,8 +387,8 @@
           <div class="col-sm-12 col-md-12">
             <h4>Aknowledgement</h4>
               <p class="row-background">
-                To Mr. Ariya Hidayat <a href="http://esprima.org/">Esprima</a>’ creator,
-                Mr. David Quintana <a href="https://github.com/gigaherz/eswalker">eswalker</a>’ creator, Mr. Caridy Patino, Principal Engineer at Yahoo!, Marisniulkis Lescaille, and to all the persons that helped with this project.
+                To Ms. Marisniulkis Lescaille, Mr. Ariya Hidayat <a href="http://esprima.org/">Esprima</a>’ creator,
+                Mr. David Quintana <a href="https://github.com/gigaherz/eswalker">eswalker</a>’ creator, Mr. Caridy Patino, Principal Engineer at Yahoo!, and to all the persons that helped with this project.
 
               </p>
           </div>
