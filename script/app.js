@@ -8,10 +8,16 @@ function inicializarEventos() {
 					'var someUncommentFunction = function(a, b){\n'+
 					'	return true;\n'+
 					'}\n\n'+
-					'function otherUncommentFunction(){\n'+
-						'	var x = 1,\n'+
-					        '		y = 1;\n'+
-					   	'	return x;\n'+
+
+
+					'/*\n'+
+					' * Old commented function description\n'+
+					' * @method oldCommentedFunction\n'+
+					' * @return x\n'+
+					' */\n'+
+					'function oldCommentedFunction(newUnCommentedParam){\n'+
+						'	var x = 1;\n'+
+					   	'    return "Thanks Rick Kilgore";\n'+
 					'}\n\n'+
 					'var someObject = {\n'+
 					  '	anotherUncommentFunction: function(x, y){\n'+
@@ -37,7 +43,7 @@ function navbar(){
 			i = 1,
 			id = $(this).attr('id');
 		$('#'+id).attr(CLASS,'active');
-		 for (i; i <= 5; i++) {
+		 for (i; i <= 6; i++) {
 			if (i==id) {
 		 		continue;	
 		 	}
