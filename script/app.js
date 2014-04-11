@@ -1,5 +1,6 @@
 $(document).ready(inicializarEventos);
 
+
 var myCodeMirror = {};
 
 function inicializarEventos() {
