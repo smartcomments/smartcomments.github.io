@@ -3,6 +3,12 @@ body {
   background: url('../images/background.png') repeat;
 }
 
+@media (max-width: 767px) {
+  .github-ribbon{
+    display: none;
+  }
+}
+
 .nav i.fa{
   font-size: 30px;
 }
