@@ -6,15 +6,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>SmartComments</title>
-
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/styles/styles.css" rel="stylesheet">
     <link href="assets/styles/codemirror.css" rel="stylesheet">
-
-    
     <link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.png" />
     <style type="text/css">
       @media (max-width: 980px) {
@@ -48,7 +44,7 @@
                       <center><span style="margin-top:5px">/* For idlers men */</span></center>
                     </a>
                   </div>
-                  <div class="navbar-collapse collapse col-md-offset-6" role="navigation">
+                  <div class="navbar-collapse collapse pull-right" role="navigation">
                     <ul class="nav navbar-nav">
                       <li id="1" class="active jquery">
                         <a class="home" href="#home">
@@ -118,9 +114,9 @@
     <div class="container">
         
         <br>
-          <div class="row">
+          <div class="row margin-3x">
             <section id="home">
-              <div class="col-sm-6 col-md-6">
+              <div class="col-lg-6 col-sm-7 col-md-6">
                 <center>
                   <div class="bs-callout bs-callout-info">
                     <p>SmartComments, It's a tool that allow you to create implicit comments from javascript source code. You can integrate it with javascript documentation generators like <a href="http://yuilibrary.com/yui/docs">YUIDocs</a>.</p>
@@ -130,7 +126,7 @@
                   </div>
                 </center>
               </div>
-              <div class="col-sm-5 col-md-4 col-md-offset-1">
+              <div class="col-lg-5 col-lg-offset-1 col-sm-5 col-md-5 col-md-offset-1">
                   <pre class="pre-consola consola">
                     <p>npm install -g smartcomments<br>smartcomments --generate</p>
                   </pre>
@@ -144,14 +140,22 @@
           <div class="demo">
           </div>
         </div>
-      <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 pull-left checkbox-group">
-          </div>
-          <div class="col-sm-5 col-md-4 pull-right">
-              <button type="button" class="btn btn-info preview">Preview</button>
-              <button type="button" class="btn btn-info generate">Generate comment <img style="max-width:100%; height:auto" src="assets/images/generate.png"></button>
-          </div>
-      </div> 
+        <div class="col-sm-12 col-md-12 margin-1x">
+            <div class="pull-left checkbox-group"></div>
+            <button type="button" class="btn btn-info preview">Preview</button>
+            <button type="button" class="btn btn-info generate pull-right">
+              Generate comments
+              <i class="fa fa-file-text-o img-generate"></i>
+            </button>
+            <button type="button" class="btn btn-info undo pull-right hidden-xs">
+              Undo
+              <i class="fa fa-undo img-generate"></i>
+            </button>
+            <button type="button" class="btn btn-info eraser pull-right hidden-xs">
+              Clean text editor
+              <i class="fa fa-eraser img-generate"></i>
+            </button>
+        </div> 
       </div>
 
       <section id="news">
@@ -445,35 +449,6 @@
           </div>
         </section>
       <br>
-
-      <footer role="contentinfo">
-              <a class="show-tooltip" href="https://github.com/smartcomments/smartcomments" data-placement="right" data-toggle="tooltip" data-original-title="Fork me on Github">
-                <div class="col-md-6 col-sm-offset-6 col-md-offset-6 logo-github-small">
-                  <div class="ear-one-left"></div>
-                  <div class="ear-one-none"></div>
-                  <div class="ear-one-right"></div>
-                  <div class="ear-two-right"></div>
-                  <div class="ear-two-none"></div>
-                  <div class="ear-two-left"></div>
-                  <div class="body-bottom"></div>
-                  <div class="body-left-none"></div>
-                  <div class="body-right-none"></div>
-                  <div class="tail-end"></div>
-                  <div class="tail-body"></div>
-                  <div class="tail-body-spots"></div>
-                  <div class="tail-end-none"></div>
-                  <div class="tail-body-none"></div>
-                  <div class="tail-tip"></div>
-                  <div class="body-left"></div>
-                  <div class="body-right"></div>
-                  <div class="head"></div>
-                  <div class="chin-left"></div>
-                  <div class="chin-right"></div>
-                </div>
-              </a>
-          
-        
-      </footer>
 
     </div>
     
