@@ -1,6 +1,7 @@
 $(document).ready(inicializarEventos);
 
-var myCodeMirror = {};
+var myCodeMirror = {},
+	value_default = "";
 
 function inicializarEventos() {
 	navbar();
@@ -33,10 +34,24 @@ function inicializarEventos() {
   		value: demo_value,
   		mode:  "javascript"
 	});
-	$(".logo-github-small").mouseover(function() {
-		$('.show-tooltip').tooltip('title')
+	$('.eraser').click(function() {
+		myCodeMirror.setValue("");
 	});
+	$('.undo').click(function() {
+		var value = getCutValue();
+		myCodeMirror.setValue(value);
+	});
+
 }
+
+function setCutValue(value) {
+	value_default = value;
+}
+
+function getCutValue() {
+	return value_default;
+}
+
 function navbar(){
 	$(".jquery").click(function() {
 		var CLASS = 'class',
