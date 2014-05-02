@@ -156,7 +156,7 @@
             <div class="col-sm-12 col-md-12">
                 <p class="row-background">
                   <strong>Version 0.3.0</strong>
-                  <span class="separate"></span>
+                  <span class="separate"></span><br>
                   <span>* Merge previous comments with new generated ones.</span>
                   <span class="separate"></span>
                   <span>* Add optional ignoring of private function in comment generation.</span>
@@ -182,13 +182,13 @@
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
                 Make sure you have installed <a href="http://nodejs.org">Node.js</a> and then run the follow command in the console.
-            </p>
+            </p><br>
             <pre class="pre-console">
               <span>npm install -g smartcomments</span>
-            </pre>
+            </pre><br>
             <p class="row-background">
                 After the installation process have finished you can put the command <b>smartcomments</b> on the console. You will see something like this.
-            </p>
+            </p><br>
             <pre class="pre-console">
               <span>dariel@ltsnotebook:~$ smartcomments -h</span>
               <span class="separate"></span>
@@ -219,7 +219,7 @@
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
               Move to the folder where the .js files are located for which you want to generate the comments. And put command <b>--generate</b> on the console.
-            </p>
+            </p><br>
             <pre class="pre-console">
               <span>dariel@ltsnotebook:~$ cd some_dir </span>
               <span>dariel@ltsnotebook:~/some_dir$ smartcomments --generate</span>
@@ -238,7 +238,7 @@
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
               If you want to especify the directory or file which you want to generate the comments, then using <b>--target</b> option.
-            </p>
+            </p><br>
             <pre class="pre-console">
               <span>dariel@ltsnotebook:~$ smartcomments -g --target /some_dir_or_file</span>
             </pre>
@@ -246,7 +246,7 @@
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
               If you want to especify the path of your custom configuration file, then using <b>--config</b> option.
-            </p>
+            </p><br>
             <pre class="pre-console">
               <span>dariel@ltsnotebook:~$ smartcomments -g --config /some_dir/smartcomments.json</span>
             </pre>
@@ -318,30 +318,30 @@
             <h4 id="custom-tags">Custom Tags</h4>
             <p class="row-background">
                 <strong>Why Custom tags?</strong>
-                <span class="separate"></span>
+                <span class="separate"></span><br>
                 To generate implicit comments you need to have a strong knowledge about the language, framework, or company´s coding style. This is a very important thing when we work with a dynamical languages as JavaScript.
-                <span class="separate"></span>
+                <span class="separate"></span><br>
 
                 The way to declare classes, fire events, or call functions are some examples of elements that change in every implementation. Below you can see, the diferents ways to fire events in 4 JavaScript frameworks.
-                <span class="separate"></span>
+                <span class="separate"></span><br>
 
                &emsp;<strong>YUI</strong> <span class="separate"></span>
-               &emsp;.fire(type, arguments) <span class="separate"></span>
+               &emsp;.fire(type, arguments) <span class="separate"></span><br>
 
                &emsp;<strong>jQuery</strong> <span class="separate"></span>
-               &emsp;.trigger( eventType, extraParameters )<span class="separate"></span>
+               &emsp;.trigger( eventType, extraParameters )<span class="separate"></span><br>
               
                &emsp;<strong>Ext JS 4</strong> <span class="separate"></span>
-               &emsp;.fireEvent( eventName, args )<span class="separate"></span>
+               &emsp;.fireEvent( eventName, args )<span class="separate"></span><br>
               
                &emsp;<strong>Angular Js</strong> <span class="separate"></span>
-               &emsp;$emit(name, args)<span class="separate"></span>
+               &emsp;$emit(name, args)<span class="separate"></span><br>
               To solve this problem SmartComments allow you to change or add your own custom tags.<span class="separate"></span>
 			  
             </p>
 			<p class="row-background">
-			  <strong>What do you need to know for customizing or add tags? </strong><span class="separate"></span>
-              Firstly you might understand how SmartComments work internally<span class="separate"></span>
+			  <strong>What do you need to know for customizing or add tags? </strong><span class="separate"></span><br>
+              Firstly you might understand how SmartComments work internally<span class="separate"></span><br>
               &emsp;1. An AST tree compatible with Mozilla Parser AST is generated from source code using<a href="http://esprima.org/"> Esprima</a><span class="separate"></span>
 
               &emsp;2. The AST tree is walked and visitor functions are called from each node<span class="separate"></span> 
@@ -350,56 +350,53 @@
 
               &emsp;4. The new comments is adding to comment list<span class="separate"></span>
 			  
-              &emsp;5. The comment list is traversed, and every comment is inserted into the source code at a specified position.<span class="separate"></span>
+              &emsp;5. The comment list is traversed, and every comment is inserted into the source code at a specified position.<span class="separate"></span><br>
              
 			  
-			  <strong>In the above process involves two important elements.</strong><span class="separate"></span>
+			  <strong>In the above process involves two important elements.</strong><span class="separate"></span><br>
 			  
-			  <strong>Esprima</strong><span class="separate"></span>
+			  <strong>Esprima</strong><span class="separate"></span><br>
 			  &emsp;<a href="http://esprima.org/"> Esprima</a> is a high performance, standard-compliant ECMAScript parser written in ECMAScript. SmartComments uses Esprima to generate an AST tree compatible with Mozilla Parser AST from javascript code.
-			  <span class="separate"></span>
+			  <span class="separate"></span><br>
 			  
-			  <strong>esWalker</strong><span class="separate"></span>
-			  &emsp;<a href="https://github.com/gigaherz/eswalker">esWalker</a> is a tree walker for Parser API-compatible AST Trees such as generated by Esprima. SmartComments uses esWalker for visiting the defined AST nodes.<span class="separate"></span>
+			  <strong>esWalker</strong><span class="separate"></span><br>
+			  &emsp;<a href="https://github.com/gigaherz/eswalker">esWalker</a> is a tree walker for Parser API-compatible AST Trees such as generated by Esprima. SmartComments uses esWalker for visiting the defined AST nodes.<span class="separate"></span><br>
 			  You should take a look at both projects before starting to create your template.
 			</p>
 			<p class="row-background">
-              <strong>Where you can customize or add tags?</strong><span class="separate"></span>
-				A file with .js extension must be created, and you must update the <b>template</b> option in config file. See <a href="#custom_config">Custom configuration</a><span class="separate"></span>
-				&emsp;template: some/route/mytemplate.js <span class="separate"></span>
+              <strong>Where you can customize or add tags?</strong><span class="separate"></span><br>
+				A file with .js extension must be created, and you must update the <b>template</b> option in config file. See <a href="#custom_config">Custom configuration</a><span class="separate"></span><br>
+				&emsp;template: some/route/mytemplate.js <span class="separate"></span><br>
 				After do that SmartComments takes the template created by you for generating the comments. You could use this feature to have multiple templates, which you can use and customize as needed, and to share with community also.
 			</p>
 			<p class="row-background">
-              <strong>How to customize or add tags?</strong><span class="separate"></span>
+              <strong>How to customize or add tags?</strong><span class="separate"></span><br>
 			  You can see our <a href="https://github.com/smartcomments/smartcomments/blob/master/templates/default.js">default template</a>, and take this as a reference to create your own.<span class="separate"></span>
 			  
-			  Two functions must be implemented in a template:<span class="separate"></span>
-			  <b>walkFunctions</b><span class="separate"></span>
+			  Two functions must be implemented in a template:<span class="separate"></span><br>
+			  <b>walkFunctions</b><span class="separate"></span><br>
 			  
-			  A list of names of nodes visiting functions used in that template should be returned. You can see the complete nodes visiting functions list <a href="https://github.com/gigaherz/eswalker/blob/master/walker.js">here</a>.<span class="separate"></span>
+			  A list of names of nodes visiting functions used in that template should be returned. You can see the complete nodes visiting functions list <a href="https://github.com/gigaherz/eswalker/blob/master/walker.js">here</a>.<span class="separate"></span><br>
 			  
-			  <b>tags</b><span class="separate"></span>
+			  <b>tags</b><span class="separate"></span><br>
 			  
-			  An object with each tag implementations, must be created and returned. In every tag you can make a concrete implementation of the different functions that need visiting, through which you can obtain the AST node information.<span class="separate"></span>
+			  An object with each tag implementations, must be created and returned. In every tag you can make a concrete implementation of the different functions that need visiting, through which you can obtain the AST node information.<span class="separate"></span><br>
 			  
 			  Every concrete visiting function receive an object whose properties are:<span class="separate"></span>
 
-				&emsp;node, parent, fieldName, siblings and index. <span class="separate"></span>
+				&emsp;node, parent, fieldName, siblings and index. <span class="separate"></span><br>
 				
-			  Inside <b>tags</b> function scope you can use the <b>template_instance</b> object, which allow you to access to user configuration options. And a <b>comments_list</b> array which contain all comments that you can insert in the source code.<span class="separate"></span>
+			  Inside <b>tags</b> function scope you can use the <b>template_instance</b> object, which allow you to access to user configuration options. And a <b>comments_list</b> array which contain all comments that you can insert in the source code.<span class="separate"></span><br>
 
-			  A <b>comment</b> object have two properties:<span class="separate"></span>
+			  A <b>comment</b> object have two properties:<span class="separate"></span><br>
 			  &emsp;pos&emsp;&emsp;     //start comment position at source code<span class="separate"></span>
-			  &emsp;tags&emsp;&emsp;    //a list of <b>tag</b> objects<span class="separate"></span>
+			  &emsp;tags&emsp;&emsp;    //a list of <b>tag</b> objects<span class="separate"></span><br>
 			  
-			  A <b>tag</b> object must have:<span class="separate"></span>
+			  A <b>tag</b> object must have:<span class="separate"></span><br>
 				&emsp;name&emsp;&emsp;   //the name of the tag<span class="separate"></span>  
-				&emsp;value&emsp;&emsp;  //the tag value Example: @method_name<span class="separate"></span>
+				&emsp;value&emsp;&emsp;  //the tag value Example: @method_name<span class="separate"></span><br>
 
-			  If you want insert a comment in the source code you just have to create a comment object and push it to <b>comment_list</b> array.<span class="separate"></span>
-			  
-			  
-			  It's a shame we do not have a complete documentation available now. But We are working on it.
+			  If you want insert a comment in the source code you just have to create a comment object and push it to <b>comment_list</b> array.<span class="separate"></span><br>
 			</p>
           </div>
         </div>
