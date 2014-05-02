@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="SmartComments, tool that allow you to create implicit comments from javascript source code. ">
+    <meta name="keywords" content="smartcomments, automatically comments, javascript, js, documentation, comments, tools, application, node js, node">
+    <meta name="title" content="SmartComments">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SmartComments</title>
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
@@ -12,17 +13,6 @@
     <link href="assets/styles/styles.css" rel="stylesheet">
     <link href="assets/styles/codemirror.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.png" />
-    <style type="text/css">
-      @media (max-width: 980px) {
-          .demo-textarea {
-            background-image:none; 
-
-          }
-          .logo-github-small {
-            margin: 0 auto;
-          }
-        }
-    </style>
   </head>
 
   <body>
@@ -39,64 +29,55 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand navbar-font" href="index.html">
-                      <img src="assets/images/logo.png" class="img-responsive img-padding">
-                      <center><span style="margin-top:5px">/* For idlers men */</span></center>
+                    <a class="navbar-brand navbar-font logo" href="index.html">
+                      <img src="assets/images/logo.png" class="img-responsive img-padding" alt="logo">
+                      <span>/* For idlers men */</span>
                     </a>
                   </div>
                   <div class="navbar-collapse collapse pull-right" role="navigation">
                     <ul class="nav navbar-nav">
                       <li id="1" class="active jquery">
-                        <a class="home" href="#home">
-                          <center>
-                          <i class="fa fa-home img-padding"></i></br>
-                            Home
-                          </center>
+                        <a class="home text-center" href="#home">
+                          <i class="fa fa-home img-padding"></i>
+                          <span class="separate"></span>
+                          Home
                         </a>
                       </li>
 
                       <li id="6" class="jquery">
-                        <a class="news" href="#news">
-                          <center>
-                          <i class="fa fa-lightbulb-o img-padding"></i></br>
-                            What's New
-                          </center>
+                        <a class="news text-center" href="#news">
+                          <i class="fa fa-lightbulb-o img-padding"></i>
+                          <span class="separate"></span>
+                          What's New
                         </a>
                       </li>
 
                       <li id="3" class="jquery">
-                        <a class="installation" href="#installation">
-                          <center>
-                            <i class="fa fa-download img-padding"></i></br>
-                            Installation
-                          </center>
+                        <a class="installation text-center" href="#installation">
+                          <i class="fa fa-download img-padding"></i>
+                          <span class="separate"></span>
+                          Installation
                         </a>
                       </li>
                       <li id="4" class="jquery">
-                        <a class="usage" href="#usage">
-                          <center>
-                            <i class="fa fa-terminal img-padding"></i></br>
-                            Usage
-                          </center>
-                          
+                        <a class="usage text-center" href="#usage">
+                          <i class="fa fa-terminal img-padding"></i>
+                          <span class="separate"></span>
+                          Usage
                         </a>
                       </li>
                       <li id="2" class="jquery">
-                        <a class="features" href="#features">
-                          <center>
-                          <i class="fa fa-list img-padding"></i></br>
-                            Features
-                          </center>
+                        <a class="features text-center" href="#features">
+                          <i class="fa fa-list img-padding"></i>
+                          <span class="separate"></span>
+                          Features
                         </a>
                       </li>
                       <li id="5" class="jquery">
-                        <a class="about" href="#about">
-                          <center>
-                            <i class="fa fa-pencil img-padding"></i></br>
-<!--                             <img src="assets/images/about.png" class="hidden-xs img-responsive img-padding"> -->
-                            About
-                          </center>
-                          
+                        <a class="about text-center" href="#about">
+                            <i class="fa fa-pencil img-padding"></i>
+                            <span class="separate"></span>
+                            About                          
                         </a>
                       </li>
                     </ul>
@@ -127,8 +108,9 @@
                 </center>
               </div>
               <div class="col-lg-5 col-lg-offset-1 col-sm-5 col-md-5 col-md-offset-1">
-                  <pre class="pre-consola consola">
-                    <p>npm install -g smartcomments<br>smartcomments --generate</p>
+                  <pre class="pre-console console">
+                      <span>npm install -g smartcomments</span>
+                      <span>smartcomments --generate</span>
                   </pre>
               </div>
             </section>
@@ -164,20 +146,24 @@
         <div class="row">
           <div class="col-sm-12 col-md-12">
             <div class="section-logo">
-                <i class="fa fa-lightbulb-o img-padding"></i></br>
+                <i class="fa fa-lightbulb-o img-padding"></i>
+                <span class="separate"></span>
                 What's New
             </div>
-          </div></br>
-        <section id="newscontainer">
-          <div class="col-sm-12 col-md-12">
-              <p class="row-background">
-                <strong>Version 0.3.0</strong></br></br>
-                  * Merge previous comments with new generated ones.</br>
-                  * Add optional ignoring of private function in comment generation.
-          
-              </p>
           </div>
-        </section>
+          
+          <section id="newscontainer">
+            <div class="col-sm-12 col-md-12">
+                <p class="row-background">
+                  <strong>Version 0.3.0</strong>
+                  <span class="separate"></span><br>
+                  <span>* Merge previous comments with new generated ones.</span>
+                  <span class="separate"></span>
+                  <span>* Add optional ignoring of private function in comment generation.</span>
+                </p>
+            </div>
+          </section>
+        </div>
       </section>
 
 
@@ -188,24 +174,32 @@
         <div class="row">
           <div class="col-sm-12 col-md-12">
             <div class="section-logo">
-                <i class="fa fa-download img-padding"></i></br>
+                <i class="fa fa-download img-padding"></i>
+                <span class="separate"></span>
                 Installation
             </div>
           </div>
-          <br>
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
                 Make sure you have installed <a href="http://nodejs.org">Node.js</a> and then run the follow command in the console.
-            </p>
-            <pre class="pre-consola">
-              <p>npm install -g smartcomments</p>
-            </pre>
+            </p><br>
+            <pre class="pre-console">
+              <span>npm install -g smartcomments</span>
+            </pre><br>
             <p class="row-background">
                 After the installation process have finished you can put the command <b>smartcomments</b> on the console. You will see something like this.
-            </p>
-            <pre class="pre-consola">
-              <p>dariel@ltsnotebook:~$ smartcomments -h<br><br>Hello!!!<br>using smartcomments@0.3.0 on node@0.10.21<br>Command line options:<br><br>-h, --help                        Show this sttuf<br>-g, --generate  [options]         Generate comments from your source<br>                [-t, --target]    Specifies the target from which to generate<br>                [-c, --config]    Custom configuration file path<br> 
-              </p>
+            </p><br>
+            <pre class="pre-console">
+              <span>dariel@ltsnotebook:~$ smartcomments -h</span>
+              <span class="separate"></span>
+              <span>Hello!!!</span>
+              <span>using smartcomments@0.3.0 on node@0.10.21</span>
+              <span class="separate"></span>
+              <span>Command line options:</span>
+              <span>-h, --help                        Show this sttuf</span>
+              <span>-g, --generate  [options]         Generate comments from your source</span>
+              <span>                [-t, --target]    Specifies the target from which to generate</span>
+              <span>                [-c, --config]    Custom configuration file path</span>
             </pre>
           </div>
         </div>
@@ -217,17 +211,18 @@
         <div class="row">
           <div class="col-sm-12 col-md-12">
             <div class="section-logo">
-                <i class="fa fa-terminal img-padding"></i></br>
+                <i class="fa fa-terminal img-padding"></i>
+                <span class="separate"></span>
                 Usage
             </div>
           </div>
-          <br>
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
               Move to the folder where the .js files are located for which you want to generate the comments. And put command <b>--generate</b> on the console.
-            </p>
-            <pre class="pre-consola">
-              <p>dariel@ltsnotebook:~$ cd some_dir <br>dariel@ltsnotebook:~/some_dir$ smartcomments --generate</p>
+            </p><br>
+            <pre class="pre-console">
+              <span>dariel@ltsnotebook:~$ cd some_dir </span>
+              <span>dariel@ltsnotebook:~/some_dir$ smartcomments --generate</span>
             </pre>
             <p class="row-background">
                 Under the hood SmartComments:<br><br>
@@ -243,17 +238,17 @@
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
               If you want to especify the directory or file which you want to generate the comments, then using <b>--target</b> option.
-            </p>
-            <pre class="pre-consola">
-              <p>dariel@ltsnotebook:~$ smartcomments -g --target /some_dir_or_file<br></p>
+            </p><br>
+            <pre class="pre-console">
+              <span>dariel@ltsnotebook:~$ smartcomments -g --target /some_dir_or_file</span>
             </pre>
           </div>
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
               If you want to especify the path of your custom configuration file, then using <b>--config</b> option.
-            </p>
-            <pre class="pre-consola">
-              <p>dariel@ltsnotebook:~$ smartcomments -g --config /some_dir/smartcomments.json<br></p>
+            </p><br>
+            <pre class="pre-console">
+              <span>dariel@ltsnotebook:~$ smartcomments -g --config /some_dir/smartcomments.json</span>
             </pre>
           </div>
 
@@ -291,11 +286,11 @@
         <div class="row">
           <div class="col-sm-12 col-md-12">
               <div class="section-logo">
-                <i class="fa fa-list img-padding"></i></br>
+                <i class="fa fa-list img-padding"></i>
+                <span class="separate"></span>
                 Features
               </div>
           </div>
-          <br>
 
           <div class="col-sm-12 col-md-12">
             <h4>Sublime Text Plugin</h4>
@@ -322,86 +317,86 @@
           <div class="col-sm-12 col-md-12">
             <h4 id="custom-tags">Custom Tags</h4>
             <p class="row-background">
-                <strong>Why Custom tags?</strong></br></br>
-                To generate implicit comments you need to have a strong knowledge about the language, framework, or company´s coding style. This is a very important thing when we work with a dynamical languages as JavaScript.</br></br>
+                <strong>Why Custom tags?</strong>
+                <span class="separate"></span><br>
+                To generate implicit comments you need to have a strong knowledge about the language, framework, or company´s coding style. This is a very important thing when we work with a dynamical languages as JavaScript.
+                <span class="separate"></span><br>
 
-                The way to declare classes, fire events, or call functions are some examples of elements that change in every implementation. Below you can see, the diferents ways to fire events in 4 JavaScript frameworks.</br></br>
+                The way to declare classes, fire events, or call functions are some examples of elements that change in every implementation. Below you can see, the diferents ways to fire events in 4 JavaScript frameworks.
+                <span class="separate"></span><br>
 
-               &emsp;<strong>YUI</strong> </br>
-               &emsp;.fire(type, arguments) </br></br>
+               &emsp;<strong>YUI</strong> <span class="separate"></span>
+               &emsp;.fire(type, arguments) <span class="separate"></span><br>
 
-               &emsp;<strong>jQuery</strong> </br>
-               &emsp;.trigger( eventType, extraParameters )</br></br>
+               &emsp;<strong>jQuery</strong> <span class="separate"></span>
+               &emsp;.trigger( eventType, extraParameters )<span class="separate"></span><br>
               
-               &emsp;<strong>Ext JS 4</strong> </br>
-               &emsp;.fireEvent( eventName, args )</br></br>
+               &emsp;<strong>Ext JS 4</strong> <span class="separate"></span>
+               &emsp;.fireEvent( eventName, args )<span class="separate"></span><br>
               
-               &emsp;<strong>Angular Js</strong> </br>
-               &emsp;$emit(name, args)</br></br>
-              To solve this problem SmartComments allow you to change or add your own custom tags.</br></br>
+               &emsp;<strong>Angular Js</strong> <span class="separate"></span>
+               &emsp;$emit(name, args)<span class="separate"></span><br>
+              To solve this problem SmartComments allow you to change or add your own custom tags.<span class="separate"></span>
 			  
             </p>
 			<p class="row-background">
-			  <strong>What do you need to know for customizing or add tags? </strong></br></br>
-              Firstly you might understand how SmartComments work internally.</br></br>
-              &emsp;1. An AST tree compatible with Mozilla Parser AST is generated from source code using<a href="http://esprima.org/"> Esprima</a>.</br></br>
+			  <strong>What do you need to know for customizing or add tags? </strong><span class="separate"></span><br>
+              Firstly you might understand how SmartComments work internally<span class="separate"></span><br>
+              &emsp;1. An AST tree compatible with Mozilla Parser AST is generated from source code using<a href="http://esprima.org/"> Esprima</a><span class="separate"></span>
 
-              &emsp;2. The AST tree is walked and visitor functions are called from each node.</br></br> 
+              &emsp;2. The AST tree is walked and visitor functions are called from each node<span class="separate"></span> 
 
-              &emsp;3. A concrete visitor function implementation is called from every tags.</br></br>
+              &emsp;3. A concrete visitor function implementation is called from every tags<span class="separate"></span>
 
-              &emsp;4. The new comments is adding to comment list.</br></br>
+              &emsp;4. The new comments is adding to comment list<span class="separate"></span>
 			  
-              &emsp;5. The comment list is traversed, and every comment is inserted into the source code at a specified position.</br></br>
+              &emsp;5. The comment list is traversed, and every comment is inserted into the source code at a specified position.<span class="separate"></span><br>
              
 			  
-			  <strong>In the above process involves two important elements.</strong></br></br>
+			  <strong>In the above process involves two important elements.</strong><span class="separate"></span><br>
 			  
-			  <strong>Esprima</strong></br></br>
+			  <strong>Esprima</strong><span class="separate"></span><br>
 			  &emsp;<a href="http://esprima.org/"> Esprima</a> is a high performance, standard-compliant ECMAScript parser written in ECMAScript. SmartComments uses Esprima to generate an AST tree compatible with Mozilla Parser AST from javascript code.
-			  </br></br>
+			  <span class="separate"></span><br>
 			  
-			  <strong>esWalker</strong></br></br>
-			  &emsp;<a href="https://github.com/gigaherz/eswalker">esWalker</a> is a tree walker for Parser API-compatible AST Trees such as generated by Esprima. SmartComments uses esWalker for visiting the defined AST nodes.</br></br>
+			  <strong>esWalker</strong><span class="separate"></span><br>
+			  &emsp;<a href="https://github.com/gigaherz/eswalker">esWalker</a> is a tree walker for Parser API-compatible AST Trees such as generated by Esprima. SmartComments uses esWalker for visiting the defined AST nodes.<span class="separate"></span><br>
 			  You should take a look at both projects before starting to create your template.
 			</p>
 			<p class="row-background">
-              <strong>Where you can customize or add tags?</strong></br></br>
-				A file with .js extension must be created, and you must update the <b>template</b> option in config file. See <a href="#custom_config">Custom configuration</a>.</br></br>
-				&emsp;template: some/route/mytemplate.js </br> </br>
+              <strong>Where you can customize or add tags?</strong><span class="separate"></span><br>
+				A file with .js extension must be created, and you must update the <b>template</b> option in config file. See <a href="#custom_config">Custom configuration</a><span class="separate"></span><br>
+				&emsp;template: some/route/mytemplate.js <span class="separate"></span><br>
 				After do that SmartComments takes the template created by you for generating the comments. You could use this feature to have multiple templates, which you can use and customize as needed, and to share with community also.
 			</p>
 			<p class="row-background">
-              <strong>How to customize or add tags?</strong></br></br>
-			  You can see our <a href="https://github.com/smartcomments/smartcomments/blob/master/templates/default.js">default template</a>, and take this as a reference to create your own.</br></br>
+              <strong>How to customize or add tags?</strong><span class="separate"></span><br>
+			  You can see our <a href="https://github.com/smartcomments/smartcomments/blob/master/templates/default.js">default template</a>, and take this as a reference to create your own.<span class="separate"></span>
 			  
-			  Two functions must be implemented in a template:</br></br>
-			  <b>walkFunctions</b></br></br>
+			  Two functions must be implemented in a template:<span class="separate"></span><br>
+			  <b>walkFunctions</b><span class="separate"></span><br>
 			  
-			  A list of names of nodes visiting functions used in that template should be returned. You can see the complete nodes visiting functions list <a href="https://github.com/gigaherz/eswalker/blob/master/walker.js">here</a>.</br></br> 
+			  A list of names of nodes visiting functions used in that template should be returned. You can see the complete nodes visiting functions list <a href="https://github.com/gigaherz/eswalker/blob/master/walker.js">here</a>.<span class="separate"></span><br>
 			  
-			  <b>tags</b></br></br>
+			  <b>tags</b><span class="separate"></span><br>
 			  
-			  An object with each tag implementations, must be created and returned. In every tag you can make a concrete implementation of the different functions that need visiting, through which you can obtain the AST node information.</br></br>
+			  An object with each tag implementations, must be created and returned. In every tag you can make a concrete implementation of the different functions that need visiting, through which you can obtain the AST node information.<span class="separate"></span><br>
 			  
-			  Every concrete visiting function receive an object whose properties are:</br></br>
+			  Every concrete visiting function receive an object whose properties are:<span class="separate"></span>
 
-				&emsp;node, parent, fieldName, siblings and index. </br></br>
+				&emsp;node, parent, fieldName, siblings and index. <span class="separate"></span><br>
 				
-			  Inside <b>tags</b> function scope you can use the <b>template_instance</b> object, which allow you to access to user configuration options. And a <b>comments_list</b> array which contain all comments that you can insert in the source code.</br></br>
+			  Inside <b>tags</b> function scope you can use the <b>template_instance</b> object, which allow you to access to user configuration options. And a <b>comments_list</b> array which contain all comments that you can insert in the source code.<span class="separate"></span><br>
 
-			  A <b>comment</b> object have two properties:</br></br>
-			  &emsp;pos&emsp;&emsp;     //start comment position at source code</br>
-			  &emsp;tags&emsp;&emsp;    //a list of <b>tag</b> objects</br></br>
+			  A <b>comment</b> object have two properties:<span class="separate"></span><br>
+			  &emsp;pos&emsp;&emsp;     //start comment position at source code<span class="separate"></span>
+			  &emsp;tags&emsp;&emsp;    //a list of <b>tag</b> objects<span class="separate"></span><br>
 			  
-			  A <b>tag</b> object must have:</br></br>
-				&emsp;name&emsp;&emsp;   //the name of the tag</br>   
-				&emsp;value&emsp;&emsp;  //the tag value Example: @method_name</br></br>
+			  A <b>tag</b> object must have:<span class="separate"></span><br>
+				&emsp;name&emsp;&emsp;   //the name of the tag<span class="separate"></span>  
+				&emsp;value&emsp;&emsp;  //the tag value Example: @method_name<span class="separate"></span><br>
 
-			  If you want insert a comment in the source code you just have to create a comment object and push it to <b>comment_list</b> array.</br></br>
-			  
-			  
-			  It's a shame we do not have a complete documentation available now. But We are working on it.
+			  If you want insert a comment in the source code you just have to create a comment object and push it to <b>comment_list</b> array.<span class="separate"></span><br>
 			</p>
           </div>
         </div>
@@ -412,11 +407,11 @@
         <div class="row">
           <div class="col-sm-12 col-md-12">
             <div class="section-logo">
-                <i class="fa fa-pencil img-padding"></i></br>
+                <i class="fa fa-pencil img-padding"></i>
+                <span class="separate"></span>
                 About
             </div>
           </div>
-          <br>
           <div class="col-sm-12 col-md-12">
             <p class="row-background">
               SmartComments is developed by a community, in which you can work freely.<br><br>
